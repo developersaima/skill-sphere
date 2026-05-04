@@ -8,7 +8,9 @@ import {
   FaCheckCircle,
 } from "react-icons/fa";
 import EditProfile from "../../components/EditProfile";
-
+export const metadata = {
+  title: "Profile - SkillSphere ",
+};
 const MyProfile = async () => {
   const session = await auth.api.getSession({
     headers: await headers(),
