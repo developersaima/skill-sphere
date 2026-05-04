@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
 
         {/* logo */}
-        <Link href="/" className="btn btn-ghost text-xl font-bold">
+        <Link href="/" className="btn btn-ghost text-xl font-bold text-pink-500">
           SkillSphere
         </Link>
       </div>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 />
               </div>
             ) : (
-              <div className="w-9 h-9 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold">
+              <div className="w-9 h-9 rounded-full bg-pink-500 text-white flex items-center justify-center text-xs font-bold">
                 {user.name
                   .split(" ")
                   .slice(0, 2)
