@@ -5,11 +5,12 @@ import Image from "next/image";
 import { FiLogOut, FiMenu } from "react-icons/fi";
 
 // user data
-const user = {
-  name: "John Doe",
-  image: "",
-};
+// const user = {
+//   name: "John Doe",
+//   image: "",
+// };
 
+const user=null
 // links
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -67,7 +68,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
 
             {/* avatar */}
-            {user.image ? (
+            {user?.image ? (
               <div className="w-9 h-9 rounded-full overflow-hidden ring ring-primary">
                 <Image
                   src={user.image}
@@ -95,7 +96,7 @@ const Navbar = () => {
             </button>
           </div>
         ) : (
-          <Link href="/login" className="btn btn-primary btn-sm">
+          <Link href="/login" className="btn bg-pink-500 text-white btn-sm">
             Login
           </Link>
         )}
