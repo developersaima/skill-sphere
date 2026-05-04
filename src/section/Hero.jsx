@@ -32,16 +32,16 @@ const SLIDES = [
  
 const HeroSection = () => {
   return (
-    <section className="w-full">
+    <section className="w-full ">
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 4000 }}
         loop
-        className="h-[100vh]"
+        className="h-[100vh] "
       >
         {SLIDES.map((item, i) => (
           <SwiperSlide key={i}>
-            <div className="relative h-[70vh] flex items-center">
+            <div className="relative h-full flex items-center">
               {/* image */}
               <Image
                 width={800}

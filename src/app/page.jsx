@@ -1,4 +1,5 @@
-import HeroSection from '@/section.Hero'
+import HeroSection from '@/section/Hero'
+import PopularCourses from '@/section/PopularCourse'
 import React from 'react'
 
 const HomePage = () => {
@@ -6,6 +7,7 @@ const HomePage = () => {
     <div>
 
       <HeroSection></HeroSection>
+      <PopularCourses></PopularCourses>
       
     </div>
   )
