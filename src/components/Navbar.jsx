@@ -3,14 +3,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FiLogOut, FiMenu } from "react-icons/fi";
+import { authClient, signOut } from "../lib/auth/auth-client";
 
-// user data
-// const user = {
-//   name: "John Doe",
-//   image: "",
-// };
 
-const user=null
+
 // links
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -18,14 +14,13 @@ const NAV_LINKS = [
   { href: "/profile", label: "My Profile" },
 ];
 
-
 const Navbar = () => {
+  const { data: session } = authClient.useSession();
+  const user = session?.user;
   return (
     <div className="navbar bg-base-100 shadow-md px-4 sticky top-0 z-50">
-
       {/* left */}
       <div className="navbar-start">
-
         {/* mobile */}
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -43,7 +38,10 @@ const Navbar = () => {
         </div>
 
         {/* logo */}
-        <Link href="/" className="btn btn-ghost text-xl font-bold text-pink-500">
+        <Link
+          href="/"
+          className="btn btn-ghost text-xl font-bold text-pink-500"
+        >
           SkillSphere
         </Link>
       </div>
@@ -63,10 +61,8 @@ const Navbar = () => {
 
       {/* right */}
       <div className="navbar-end gap-2">
-
         {user ? (
           <div className="flex items-center gap-2">
-
             {/* avatar */}
             {user?.image ? (
               <div className="w-9 h-9 rounded-full overflow-hidden ring ring-primary">
@@ -90,7 +86,7 @@ const Navbar = () => {
             )}
 
             {/* logout */}
-            <button className="btn btn-sm btn-outline btn-error gap-1">
+            <button className="btn btn-sm btn-outline btn-error gap-1" onClick={()=>signOut()}>
               <FiLogOut size={14} />
               Logout
             </button>
