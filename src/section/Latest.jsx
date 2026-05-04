@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 import { getCourses } from "../lib/courses";
-import CourseCard from "@/components/CourseCard";
+import CourseCard from ".././components/CourseCard";
+
 
 const Latest = async () => {
   const courses = await getCourses();

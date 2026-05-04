@@ -1,6 +1,6 @@
 "use client";
 
-import CourseCard from "@/components/CourseCard";
+import CourseCard from "../components/CourseCard";
 import { useState } from "react";
 
 export default function AllCourses({ initialCourses }) {

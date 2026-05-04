@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { getCourses } from "../lib/courses";
-import CourseCard from "@/components/CourseCard";
+import CourseCard from ".././components/CourseCard";
 
 export default async function PopularCourses() {
   const courses = await getCourses();

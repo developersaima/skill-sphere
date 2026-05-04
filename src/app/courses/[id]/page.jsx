@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { getCourseById } from "@/lib/courses";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { getCourseById } from "../../../lib/courses";
+import { FaArrowLeft } from "react-icons/fa";
 
 
 export default async function CourseDetails({ params }) {

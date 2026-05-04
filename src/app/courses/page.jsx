@@ -1,5 +1,5 @@
-import { getCourses } from '@/lib/courses'
-import AllCourses from '@/section/AllCourses'
+import { getCourses } from '../../lib/courses'
+import AllCourses from '../../section/AllCourses'
 import React from 'react'
 
 const CoursePage =async () => {
