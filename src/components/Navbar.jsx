@@ -65,7 +65,7 @@ const Navbar = () => {
           <div className="flex items-center gap-2">
             {/* avatar */}
             {user?.image ? (
-              <div className="w-9 h-9 rounded-full overflow-hidden ring ring-primary">
+              <div className="w-9 h-9 rounded-full overflow-hidden ring border-pink-500">
                 <Image
                   src={user.image}
                   alt={user.name}
