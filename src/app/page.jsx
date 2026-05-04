@@ -1,4 +1,5 @@
 import HeroSection from '@/section/Hero'
+import Instructors from '@/section/Instructor'
 import Latest from '@/section/Latest'
 import PopularCourses from '@/section/PopularCourse'
 import Tips from '@/section/Tips'
@@ -12,6 +13,7 @@ const HomePage = () => {
       <PopularCourses></PopularCourses>
       <Tips></Tips>
       <Latest></Latest>
+      <Instructors></Instructors>
       
     </div>
   )
