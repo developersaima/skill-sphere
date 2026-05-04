@@ -31,7 +31,7 @@ export default async function PopularCourses() {
 
         <div className="text-center mt-10">
           <Link href="/courses">
-            <button className="btn border-pink-500 text-pink-600  hover:text-white hover:bg-pink-500">
+            <button className="btn bg-white border-pink-500 text-pink-600  hover:text-white hover:bg-pink-500">
               View All Courses
             </button>
           </Link>

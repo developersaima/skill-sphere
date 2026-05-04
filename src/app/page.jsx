@@ -1,5 +1,6 @@
 import HeroSection from '@/section/Hero'
 import PopularCourses from '@/section/PopularCourse'
+import Tips from '@/section/Tips'
 import React from 'react'
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
 
       <HeroSection></HeroSection>
       <PopularCourses></PopularCourses>
+      <Tips></Tips>
       
     </div>
   )
