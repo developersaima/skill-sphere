@@ -1,36 +1,189 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🎓 SkillSphere – Online Learning Platform
 
-## Getting Started
+A modern and responsive online learning platform built with **Next.js**, where users can explore courses, view details, and manage their profile. SkillSphere focuses on skill-based learning like Web Development, Design, Marketing, Data Science and more.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+
+👉 https://skill-sphere-saima.vercel.app
+
+---
+
+## 📌 Project Purpose
+
+SkillSphere is designed to provide a seamless learning experience where users can:
+
+- Browse and search courses
+- View detailed course content
+- Enroll in courses
+- Manage their profile
+- Authenticate securely using BetterAuth
+
+---
+
+## ✨ Key Features
+
+### 🏠 Home Page
+- Hero section with modern banner
+- Trending / Popular courses
+- Learning tips section
+- Top instructors section
+- Responsive UI for all devices
+
+### 📚 Courses
+- All courses listing page
+- Search courses by title
+- Dynamic course cards
+- Course details page (protected route)
+
+### 🔒 Authentication
+- User Registration (Name, Email, Photo URL, Password)
+- Login system
+- Google OAuth login
+- Protected routes
+
+### 👤 Profile
+- User profile dashboard
+- Edit profile (name & image update)
+- Account information display
+- Activity timeline
+
+### 📖 Course Details
+- Full course information
+- Instructor details
+- Ratings & metadata
+- Curriculum section (static)
+- Enroll feature
+
+### ⚡ Extra Features
+- Toast notifications
+- Loading states
+- Not Found page
+- Fully responsive design
+- Clean UI with DaisyUI + Tailwind
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|---|---|
+| Next.js (App Router) | Framework |
+| React 19 | UI Library |
+| Tailwind CSS v4 | Styling |
+| DaisyUI v5 | UI Components |
+| BetterAuth | Authentication |
+| MongoDB | Database |
+| React Hook Form | Form Handling |
+| React Hot Toast | Notifications |
+| Framer Motion | Animations |
+
+---
+
+## 📦 Installation & Setup
 
 ```bash
+# Clone the repository
+git clone https://github.com/developersaima/skill-sphere
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🔐 Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env` file in the root directory:
 
-## Learn More
+```env
+BETTER_AUTH_SECRET=your_secret_key
+BETTER_AUTH_URL=http://localhost:3000
+MONGODB_URI=your_mongodb_connection_string
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+src/
+├── app/
+│   ├── (auth)/
+│   │   ├── login/
+│   │   └── register/
+│   ├── courses/
+│   ├── profile/
+│   ├── layout.jsx
+│   └── page.jsx
+├── components/
+│   ├── Navbar.jsx
+│   └── Footer.jsx
+├── section/
+│   ├── AllCourses.jsx
+│   ├── Hero.jsx
+│   ├── Instructor.jsx
+│   ├── Latest.jsx
+│   ├── PopularCourse.jsx
+│   └── Tips.jsx
+├── lib/
+│   ├── auth/
+│   │   ├── auth.js
+│   │   └── auth-client.js
+│   └── courses.js
+└── data/
+    └── data.json
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧩 Main Pages
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Route | Description |
+|---|---|
+| `/` | Home Page |
+| `/courses` | All Courses |
+| `/courses/[id]` | Course Details (Protected) |
+| `/login` | Login Page |
+| `/register` | Register Page |
+| `/profile` | User Profile |
+
+---
+
+## 🎯 Assignment Requirements Covered
+
+- ✔ 10+ meaningful Git commits
+- ✔ Fully responsive UI
+- ✔ Protected routes
+- ✔ Authentication (BetterAuth + Google Login)
+- ✔ Course JSON data
+- ✔ Search functionality
+- ✔ Profile update feature
+- ✔ Loading & Not-found page
+- ✔ Unique UI design
+- ✔ Deployment ready (Vercel)
+
+---
+
+## ⚠️ Notes
+
+- Email verification & forgot password intentionally not implemented (as per assignment requirement)
+- Reload-safe routing handled via Next.js App Router
+
+---
+
+## 👩‍💻 Developer
+
+Built with ❤️ by **Saima Akter**
+
+---
+
+## 📜 License
+
+This project is for educational purposes only.
